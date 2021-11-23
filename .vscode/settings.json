@@ -1,0 +1,39 @@
+{
+    "fileheader.Author": "Koko",
+    // 插件配置选项,readme:https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+    //配置新建文件注释和方法注释
+    "fileheader.configObj": {
+      "createFileTime": true, //设置为true则为文件新建时候作为date，否则注释生成时间为date
+      "autoAdd": false, //自动生成注释，老是忘记的同学可以设置
+      "wideSame":true,
+      "prohibitAutoAdd":["json","md"],
+      "annotationStr": {
+        "head": "/*", // 自定义注释头部
+        "middle": " * @", // 自定义注释中间部分(注意空格,这也是最终生成注释的一部分)
+        "end": " */", // 自定义注释尾部
+        "use": true // 是否使用自定义注释符号
+      },
+      //头部注释第几行插入
+      "headInsertLine": {
+        "php": 2,
+        "*": 1, // 所有文件都在第1行插入注释(除了php)
+      }
+    },
+    //函数注释 快捷键：window：ctrl+alt+t,mac：ctrl+cmd+t
+    "fileheader.cursorMode": {
+      "name": "",
+      "description": "",
+      "param": "",
+      "return": ""
+    },
+    //文件头部注释 快捷键：window：ctrl+alt+i,mac：ctrl+cmd+i
+    "fileheader.customMade": {
+      "Author": "Koko", //编辑人
+      "Date": "Do not edit", //文件创建时间(不变)
+      "FilePath": "Do not edit", // 文件在项目中的相对路径 自动更新
+      "LastEditTime": "Do not edit", //文件最后编辑时间
+      "LastEditors": "Koko",
+      "Description": "", //文件内容描述
+    },
+  }
+  
